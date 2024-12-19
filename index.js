@@ -21,7 +21,7 @@ let limiter = rateLimit({
 // Middleware setup
 app.use(
   cors({
-    origin: process.env.ALLOWED_URL || "*", // Your frontend URL, default to *
+    origin: "http://127.0.0.1:5500", // Your frontend URL, default to *
     methods: "*",
     allowedHeaders: "Content-Type,Authorization",
     credentials: true,
